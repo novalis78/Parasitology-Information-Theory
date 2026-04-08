@@ -33,7 +33,7 @@ code/Shannon\ Meets*.pdf
 code/The_Democratic_Channel*.pdf
 
 # Large raw data files (can be re-downloaded; see README)
-data/HIV1_env_proteins.fasta
+# data/HIV1_env_proteins.fasta  # included for replication (public domain, NCBI)
 data/varDB.fulldataset.Domains.gff.gz
 data/EATRO1125_VSGdb_3570cds.fa
 data/Mugnier2015_early_VSGs.fa
