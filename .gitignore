@@ -1,3 +1,4 @@
+# LaTeX build artifacts
 *.aux
 *.log
 *.out
@@ -6,3 +7,37 @@
 *.fdb_latexmk
 *.blg
 *.bbl
+*.toc
+
+# OS files
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Working drafts and briefing docs (not part of the paper)
+parasitic_channel_paper.md.pdf
+parasitic_channel_v2.md.pdf
+parasitic_channel_v3_final.md.pdf
+parasitic_channel_v3_final\ \(1\).md
+parasitic_channel.pdf
+claude_code_latex_instructions.md
+discussion.txt
+code/claude_code_briefing*.md
+code/compass_artifact_*.md
+code/paper_draft.md
+code/mugnier-sm.pdf
+code/Parasitology\ Datasets*.pdf
+code/Shannon\ Meets*.pdf
+code/The_Democratic_Channel*.pdf
+
+# Large raw data files (can be re-downloaded; see README)
+data/HIV1_env_proteins.fasta
+data/varDB.fulldataset.Domains.gff.gz
+data/EATRO1125_VSGdb_3570cds.fa
+data/Mugnier2015_early_VSGs.fa
+data/Mugnier2015_late_VSGs.fa
+data/Mugnier2015_early_VSGs.bed
+data/Mugnier2015_late_VSGs.bed
+data/Additional_file_2.docx

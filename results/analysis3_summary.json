@@ -1,0 +1,55 @@
+{
+  "analysis": "HIV-1 env sequence entropy",
+  "data_source": "NCBI protein database (HIV-1 env, 500-900 aa)",
+  "n_sequences": 500,
+  "mean_sequence_length": 855.6,
+  "H_aa_composition": 4.184,
+  "H_max_per_position": 4.322,
+  "H_9mer_epitope": 13.936,
+  "n_unique_9mers": 81566,
+  "kmer_entropy": {
+    "5": {
+      "k": 5,
+      "H_bits": 12.528,
+      "n_unique_kmers": 40061,
+      "H_max": 15.29
+    },
+    "7": {
+      "k": 7,
+      "H_bits": 13.304,
+      "n_unique_kmers": 61784,
+      "H_max": 15.915
+    },
+    "9": {
+      "k": 9,
+      "H_bits": 13.936,
+      "n_unique_kmers": 81566,
+      "H_max": 16.316
+    },
+    "11": {
+      "k": 11,
+      "H_bits": 14.47,
+      "n_unique_kmers": 100085,
+      "H_max": 16.611
+    },
+    "13": {
+      "k": 13,
+      "H_bits": 14.921,
+      "n_unique_kmers": 117057,
+      "H_max": 16.837
+    }
+  },
+  "NF_kB_channel_capacity": 0.92,
+  "ratio_9mer_H_to_C": 15.15,
+  "interpretation": "H(epitope repertoire) >> C(immune channel): Shannon converse guarantees unreliable discrimination",
+  "mean_positional_H": 2.985,
+  "max_positional_H": 3.814,
+  "total_sequence_H": 2408.9,
+  "pct_positions_exceeding_NF_kB": 99.5,
+  "pairwise_diversity": {
+    "mean_pairwise_distance": 0.8005,
+    "std_pairwise_distance": 0.19,
+    "median_pairwise_distance": 0.8406,
+    "n_pairs_sampled": 1000
+  }
+}

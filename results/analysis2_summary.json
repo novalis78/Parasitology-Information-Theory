@@ -1,0 +1,72 @@
+{
+  "analysis": "T. brucei VSG switching entropy over time",
+  "data_source": "Mugnier et al. (2015) Science 349:1470",
+  "total_vsg_repertoire": 3570,
+  "H_max_repertoire_bits": 11.8,
+  "overall_mean_H": 1.697,
+  "overall_std_H": 1.044,
+  "NF_kB_channel_capacity": 0.92,
+  "ratio_overall_to_NF_kB": 1.84,
+  "growth_rates": {
+    "Mouse1": {
+      "slope_bits_per_day": 0.0617,
+      "intercept": 0.6379,
+      "r_squared": 0.1537,
+      "p_value": 0.336681
+    },
+    "Mouse2": {
+      "slope_bits_per_day": 0.0489,
+      "intercept": 0.8666,
+      "r_squared": 0.21,
+      "p_value": 0.25354
+    },
+    "Mouse3": {
+      "slope_bits_per_day": 0.0432,
+      "intercept": 0.648,
+      "r_squared": 0.1394,
+      "p_value": 0.362216
+    },
+    "Mouse4": {
+      "slope_bits_per_day": 0.016,
+      "intercept": 1.4251,
+      "r_squared": 0.0084,
+      "p_value": 0.828999
+    }
+  },
+  "mi_time_vsg": {
+    "Mouse1": 2.6116,
+    "Mouse2": 2.5855,
+    "Mouse3": 2.2265,
+    "Mouse4": 2.4424
+  },
+  "per_mouse_summary": {
+    "Mouse1": {
+      "n_unique_vsgs": 133,
+      "n_timepoints": 8,
+      "min_H": 0.047,
+      "max_H": 3.988,
+      "mean_H": 1.803
+    },
+    "Mouse2": {
+      "n_unique_vsgs": 135,
+      "n_timepoints": 8,
+      "min_H": 0.359,
+      "max_H": 2.859,
+      "mean_H": 1.789
+    },
+    "Mouse3": {
+      "n_unique_vsgs": 65,
+      "n_timepoints": 8,
+      "min_H": 0.047,
+      "max_H": 2.667,
+      "mean_H": 1.468
+    },
+    "Mouse4": {
+      "n_unique_vsgs": 122,
+      "n_timepoints": 8,
+      "min_H": 0.042,
+      "max_H": 3.609,
+      "mean_H": 1.729
+    }
+  }
+}

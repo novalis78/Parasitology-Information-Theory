@@ -1,0 +1,22 @@
+{
+  "analysis": "P. falciparum var gene antigenic entropy",
+  "data_source": "Otto et al. (2019) varDB dataset",
+  "n_isolates": 2378,
+  "n_var_genes": 165164,
+  "n_unique_architectures": 3249,
+  "global_entropy_bits": 6.792,
+  "global_entropy_CI_lo": 6.59,
+  "global_entropy_CI_hi": 6.74,
+  "global_H_max_bits": 11.666,
+  "global_efficiency": 0.5822,
+  "mean_per_country_entropy": 6.08,
+  "mean_per_genome_entropy": 4.494,
+  "theoretical_per_genome_entropy": 5.907,
+  "NF_kB_channel_capacity": 0.92,
+  "ratio_global_to_NF_kB": 7.38,
+  "ratio_per_country_to_NF_kB": 6.61,
+  "ratio_per_genome_to_NF_kB": 4.88,
+  "sensitivity_full_arch_H": 6.792,
+  "sensitivity_first_domain_H": 2.042,
+  "sensitivity_domain_count_H": 2.757
+}

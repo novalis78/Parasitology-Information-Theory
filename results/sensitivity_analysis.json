@@ -1,0 +1,331 @@
+{
+  "pfalciparum": [
+    {
+      "system": "P. falciparum",
+      "level": "Global (full architecture)",
+      "H_bits": 6.7923,
+      "CI_lo": 6.7589,
+      "CI_hi": 6.795,
+      "H_corrected": 6.7781,
+      "n_types": 3249,
+      "n_observations": 165164,
+      "data_source": "Otto et al. 2019 (varDB, N=2,398 isolates)"
+    },
+    {
+      "system": "P. falciparum",
+      "level": "Per-country (Ghana)",
+      "H_bits": 6.6939,
+      "CI_lo": 6.6323,
+      "CI_hi": 6.6918,
+      "H_corrected": 6.6649,
+      "n_types": 1934,
+      "n_observations": 48169,
+      "data_source": "Otto et al. 2019 (Ghana)"
+    },
+    {
+      "system": "P. falciparum",
+      "level": "Per-country (Cambodia)",
+      "H_bits": 6.7036,
+      "CI_lo": 6.6332,
+      "CI_hi": 6.7039,
+      "H_corrected": 6.6729,
+      "n_types": 1442,
+      "n_observations": 33885,
+      "data_source": "Otto et al. 2019 (Cambodia)"
+    },
+    {
+      "system": "P. falciparum",
+      "level": "Per-country (Malawi)",
+      "H_bits": 6.6991,
+      "CI_lo": 6.6108,
+      "CI_hi": 6.6958,
+      "H_corrected": 6.6578,
+      "n_types": 1393,
+      "n_observations": 24317,
+      "data_source": "Otto et al. 2019 (Malawi)"
+    },
+    {
+      "system": "P. falciparum",
+      "level": "Per-country (Thailand)",
+      "H_bits": 6.3589,
+      "CI_lo": 6.2275,
+      "CI_hi": 6.3636,
+      "H_corrected": 6.3003,
+      "n_types": 648,
+      "n_observations": 7965,
+      "data_source": "Otto et al. 2019 (Thailand)"
+    },
+    {
+      "system": "P. falciparum",
+      "level": "Per-country (Democratic Republic of Congo)",
+      "H_bits": 6.4494,
+      "CI_lo": 6.2912,
+      "CI_hi": 6.4448,
+      "H_corrected": 6.375,
+      "n_types": 807,
+      "n_observations": 7819,
+      "data_source": "Otto et al. 2019 (Democratic Republic of Congo)"
+    },
+    {
+      "system": "P. falciparum",
+      "level": "Per-genome (mean)",
+      "H_bits": 4.4941,
+      "CI_lo": 4.4674,
+      "CI_hi": 4.518,
+      "H_corrected": 4.4941,
+      "n_types": null,
+      "n_observations": 2378,
+      "data_source": "Otto et al. 2019 (N=2378 isolates)"
+    },
+    {
+      "system": "P. falciparum",
+      "level": "Global (first domain only)",
+      "H_bits": 2.0425,
+      "CI_lo": 2.0323,
+      "CI_hi": 2.0521,
+      "H_corrected": 2.0424,
+      "n_types": 18,
+      "n_observations": 165164,
+      "data_source": "Otto et al. 2019 (DBL\u03b1 type only)"
+    },
+    {
+      "system": "P. falciparum",
+      "level": "Normalized subset (subdomains)",
+      "H_bits": 12.3236,
+      "CI_lo": 11.9825,
+      "CI_hi": 12.0378,
+      "H_corrected": 12.0466,
+      "n_types": 16089,
+      "n_observations": 41897,
+      "data_source": "Otto et al. 2019 (60-sample normalized set)"
+    }
+  ],
+  "tbrucei": [
+    {
+      "system": "T. brucei",
+      "level": "Mouse 1 (mean across timepoints)",
+      "H_bits": 1.8032,
+      "CI_lo": 0.9952,
+      "CI_hi": 2.5867,
+      "H_corrected": 1.8032,
+      "n_types": 133,
+      "n_observations": 8,
+      "data_source": "Mugnier et al. 2015 (Mouse 1)"
+    },
+    {
+      "system": "T. brucei",
+      "level": "Mouse 1 (max timepoint)",
+      "H_bits": 3.9879,
+      "CI_lo": null,
+      "CI_hi": null,
+      "H_corrected": 3.9879,
+      "n_types": null,
+      "n_observations": null,
+      "data_source": "Mugnier et al. 2015 (Mouse 1)"
+    },
+    {
+      "system": "T. brucei",
+      "level": "Mouse 2 (mean across timepoints)",
+      "H_bits": 1.7893,
+      "CI_lo": 1.2381,
+      "CI_hi": 2.2873,
+      "H_corrected": 1.7893,
+      "n_types": 135,
+      "n_observations": 8,
+      "data_source": "Mugnier et al. 2015 (Mouse 2)"
+    },
+    {
+      "system": "T. brucei",
+      "level": "Mouse 2 (max timepoint)",
+      "H_bits": 2.8591,
+      "CI_lo": null,
+      "CI_hi": null,
+      "H_corrected": 2.8591,
+      "n_types": null,
+      "n_observations": null,
+      "data_source": "Mugnier et al. 2015 (Mouse 2)"
+    },
+    {
+      "system": "T. brucei",
+      "level": "Mouse 3 (mean across timepoints)",
+      "H_bits": 1.468,
+      "CI_lo": 0.8822,
+      "CI_hi": 2.0681,
+      "H_corrected": 1.468,
+      "n_types": 65,
+      "n_observations": 8,
+      "data_source": "Mugnier et al. 2015 (Mouse 3)"
+    },
+    {
+      "system": "T. brucei",
+      "level": "Mouse 3 (max timepoint)",
+      "H_bits": 2.6672,
+      "CI_lo": null,
+      "CI_hi": null,
+      "H_corrected": 2.6672,
+      "n_types": null,
+      "n_observations": null,
+      "data_source": "Mugnier et al. 2015 (Mouse 3)"
+    },
+    {
+      "system": "T. brucei",
+      "level": "Mouse 4 (mean across timepoints)",
+      "H_bits": 1.7289,
+      "CI_lo": 0.8482,
+      "CI_hi": 2.6142,
+      "H_corrected": 1.7289,
+      "n_types": 122,
+      "n_observations": 8,
+      "data_source": "Mugnier et al. 2015 (Mouse 4)"
+    },
+    {
+      "system": "T. brucei",
+      "level": "Mouse 4 (max timepoint)",
+      "H_bits": 3.6092,
+      "CI_lo": null,
+      "CI_hi": null,
+      "H_corrected": 3.6092,
+      "n_types": null,
+      "n_observations": null,
+      "data_source": "Mugnier et al. 2015 (Mouse 4)"
+    },
+    {
+      "system": "T. brucei",
+      "level": "All mice (mean, all timepoints)",
+      "H_bits": 1.6974,
+      "CI_lo": 1.3416,
+      "CI_hi": 2.0688,
+      "H_corrected": 1.6974,
+      "n_types": null,
+      "n_observations": 32,
+      "data_source": "Mugnier et al. 2015 (4 mice, 8 timepoints each)"
+    },
+    {
+      "system": "T. brucei",
+      "level": "All mice (max single timepoint)",
+      "H_bits": 3.9879,
+      "CI_lo": null,
+      "CI_hi": null,
+      "H_corrected": 3.9879,
+      "n_types": null,
+      "n_observations": null,
+      "data_source": "Mugnier et al. 2015"
+    },
+    {
+      "system": "T. brucei",
+      "level": "Late infection (days 96-105)",
+      "H_bits": 2.2549,
+      "CI_lo": null,
+      "CI_hi": null,
+      "H_corrected": 2.2549,
+      "n_types": 97,
+      "n_observations": 4,
+      "data_source": "Mugnier et al. 2015 (Mouse 3 late)"
+    }
+  ],
+  "hiv": [
+    {
+      "system": "HIV-1 env",
+      "level": "Mean per-position (All sequences)",
+      "H_bits": 2.985,
+      "CI_lo": 2.9402,
+      "CI_hi": 3.0296,
+      "H_corrected": 2.985,
+      "n_types": null,
+      "n_observations": 496,
+      "data_source": "NCBI (All sequences, N=496)"
+    },
+    {
+      "system": "HIV-1 env",
+      "level": "9-mer epitope entropy (All sequences)",
+      "H_bits": 13.9363,
+      "CI_lo": 13.7513,
+      "CI_hi": 13.7692,
+      "H_corrected": 13.78,
+      "n_types": 81566,
+      "n_observations": 376386,
+      "data_source": "NCBI (All sequences)"
+    },
+    {
+      "system": "HIV-1 env",
+      "level": "Max per-position (All sequences)",
+      "H_bits": 3.8144,
+      "CI_lo": null,
+      "CI_hi": null,
+      "H_corrected": 3.8144,
+      "n_types": null,
+      "n_observations": null,
+      "data_source": "NCBI (All sequences)"
+    },
+    {
+      "system": "HIV-1 env",
+      "level": "Mean per-position (Deduplicated (unique))",
+      "H_bits": 2.9665,
+      "CI_lo": 2.9223,
+      "CI_hi": 3.0101,
+      "H_corrected": 2.9665,
+      "n_types": null,
+      "n_observations": 459,
+      "data_source": "NCBI (Deduplicated (unique), N=459)"
+    },
+    {
+      "system": "HIV-1 env",
+      "level": "9-mer epitope entropy (Deduplicated (unique))",
+      "H_bits": 13.9926,
+      "CI_lo": 13.79,
+      "CI_hi": 13.8109,
+      "H_corrected": 13.8221,
+      "n_types": 81566,
+      "n_observations": 344918,
+      "data_source": "NCBI (Deduplicated (unique))"
+    },
+    {
+      "system": "HIV-1 env",
+      "level": "Max per-position (Deduplicated (unique))",
+      "H_bits": 3.8204,
+      "CI_lo": null,
+      "CI_hi": null,
+      "H_corrected": 3.8204,
+      "n_types": null,
+      "n_observations": null,
+      "data_source": "NCBI (Deduplicated (unique))"
+    }
+  ],
+  "capacity_benchmarks": [
+    {
+      "pathway": "TNF\u2192NF-\u03baB (snapshot)",
+      "C_bits": 0.92,
+      "method": "Binned MI, single-cell",
+      "reference": "Cheong et al. 2011",
+      "n_cells": "~9,000"
+    },
+    {
+      "pathway": "TNF\u2192NF-\u03baB (dynamic)",
+      "C_bits": 1.5,
+      "method": "Dynamic MI, temporal codons",
+      "reference": "Selimkhanov et al. 2014",
+      "n_cells": "~thousands"
+    },
+    {
+      "pathway": "NF-\u03baB signaling codons",
+      "C_bits": 2.6,
+      "method": "6 temporal codons",
+      "reference": "Adelaja et al. 2021",
+      "n_cells": "~thousands"
+    },
+    {
+      "pathway": "TCR kinetic proofreading",
+      "C_bits": 1.0,
+      "method": "Computational model",
+      "reference": "Ganti et al. 2020",
+      "n_cells": "model"
+    },
+    {
+      "pathway": "ERK pathway",
+      "C_bits": 1.0,
+      "method": "Amplitude MI",
+      "reference": "Uda et al. 2013",
+      "n_cells": "~thousands"
+    }
+  ]
+}

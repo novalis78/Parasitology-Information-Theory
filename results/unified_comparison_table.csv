@@ -1,0 +1,32 @@
+System,Quantity,H_bits,CI_95,C_bits,Ratio_H_C,Source
+P. falciparum,Global (full architecture),6.79,"[6.76, 6.79]",0.92,7.4×,"Otto et al. 2019 (varDB, N=2,398 isolates)"
+P. falciparum,Per-country (Ghana),6.69,"[6.63, 6.69]",0.92,7.3×,Otto et al. 2019 (Ghana)
+P. falciparum,Per-country (Cambodia),6.70,"[6.63, 6.70]",0.92,7.3×,Otto et al. 2019 (Cambodia)
+P. falciparum,Per-country (Malawi),6.70,"[6.61, 6.70]",0.92,7.3×,Otto et al. 2019 (Malawi)
+P. falciparum,Per-country (Thailand),6.36,"[6.23, 6.36]",0.92,6.9×,Otto et al. 2019 (Thailand)
+P. falciparum,Per-country (Democratic Republic of Congo),6.45,"[6.29, 6.44]",0.92,7.0×,Otto et al. 2019 (Democratic Republic of Congo)
+P. falciparum,Per-genome (mean),4.49,"[4.47, 4.52]",0.92,4.9×,Otto et al. 2019 (N=2378 isolates)
+P. falciparum,Global (first domain only),2.04,"[2.03, 2.05]",0.92,2.2×,Otto et al. 2019 (DBLα type only)
+P. falciparum,Normalized subset (subdomains),12.32,"[11.98, 12.04]",0.92,13.4×,Otto et al. 2019 (60-sample normalized set)
+T. brucei,Mouse 1 (mean across timepoints),1.80,"[1.00, 2.59]",0.92,2.0×,Mugnier et al. 2015 (Mouse 1)
+T. brucei,Mouse 1 (max timepoint),3.99,—,0.92,4.3×,Mugnier et al. 2015 (Mouse 1)
+T. brucei,Mouse 2 (mean across timepoints),1.79,"[1.24, 2.29]",0.92,1.9×,Mugnier et al. 2015 (Mouse 2)
+T. brucei,Mouse 2 (max timepoint),2.86,—,0.92,3.1×,Mugnier et al. 2015 (Mouse 2)
+T. brucei,Mouse 3 (mean across timepoints),1.47,"[0.88, 2.07]",0.92,1.6×,Mugnier et al. 2015 (Mouse 3)
+T. brucei,Mouse 3 (max timepoint),2.67,—,0.92,2.9×,Mugnier et al. 2015 (Mouse 3)
+T. brucei,Mouse 4 (mean across timepoints),1.73,"[0.85, 2.61]",0.92,1.9×,Mugnier et al. 2015 (Mouse 4)
+T. brucei,Mouse 4 (max timepoint),3.61,—,0.92,3.9×,Mugnier et al. 2015 (Mouse 4)
+T. brucei,"All mice (mean, all timepoints)",1.70,"[1.34, 2.07]",0.92,1.8×,"Mugnier et al. 2015 (4 mice, 8 timepoints each)"
+T. brucei,All mice (max single timepoint),3.99,—,0.92,4.3×,Mugnier et al. 2015
+T. brucei,Late infection (days 96-105),2.25,—,0.92,2.5×,Mugnier et al. 2015 (Mouse 3 late)
+HIV-1 env,Mean per-position (All sequences),2.98,"[2.94, 3.03]",0.92,3.2×,"NCBI (All sequences, N=496)"
+HIV-1 env,9-mer epitope entropy (All sequences),13.94,"[13.75, 13.77]",0.92,15.1×,NCBI (All sequences)
+HIV-1 env,Max per-position (All sequences),3.81,—,0.92,4.1×,NCBI (All sequences)
+HIV-1 env,Mean per-position (Deduplicated (unique)),2.97,"[2.92, 3.01]",0.92,3.2×,"NCBI (Deduplicated (unique), N=459)"
+HIV-1 env,9-mer epitope entropy (Deduplicated (unique)),13.99,"[13.79, 13.81]",0.92,15.2×,NCBI (Deduplicated (unique))
+HIV-1 env,Max per-position (Deduplicated (unique)),3.82,—,0.92,4.2×,NCBI (Deduplicated (unique))
+Immune signaling,TNF→NF-κB (snapshot),—,—,0.92,—,Cheong et al. 2011
+Immune signaling,TNF→NF-κB (dynamic),—,—,1.50,—,Selimkhanov et al. 2014
+Immune signaling,NF-κB signaling codons,—,—,2.60,—,Adelaja et al. 2021
+Immune signaling,TCR kinetic proofreading,—,—,1.00,—,Ganti et al. 2020
+Immune signaling,ERK pathway,—,—,1.00,—,Uda et al. 2013
