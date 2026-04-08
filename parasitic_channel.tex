@@ -208,7 +208,7 @@ For each dataset:
 \item Define the antigenic alphabet $\mathcal{X}$ (var domain architectures, VSG variant identities, or amino acid types at each position).
 \item Compute the empirical frequency distribution $\hat{P}(x) = n_x / N$.
 \item Compute Shannon entropy $H(X) = -\sum_x \hat{P}(x) \log_2 \hat{P}(x)$ using \texttt{scipy.stats.entropy}.
-\item Apply Miller-Madow finite-sample bias correction~\citep{miller1955}: $H_{\text{corrected}} = H_{\text{raw}} - (K-1)/(2N\ln 2)$, where $K = |\mathcal{X}|$ and $N$ is the number of observations.
+\item Apply Miller-Madow finite-sample bias correction~\citep{miller1955}: $H_{\text{corrected}} = H_{\text{raw}} - (K-1)/(2N\ln 2)$, where $K = |\mathcal{X}|$ and $N$ is the number of observations.  (The naive plugin entropy estimator has a known positive bias of approximately $(K-1)/(2N\ln 2)$; we subtract this correction following \citealt{miller1955}.)
 \item Compute 95\% bootstrap confidence intervals from 1,000 resamples with replacement.
 \end{enumerate}
 
@@ -397,7 +397,7 @@ The answer depends on the correlation structure among immune cells.  Information
 
 \textbf{Fully correlated receivers (lower bound).}  If all cells observe the same signal, $C_{\text{aggregate}} = C_{\text{single}} = 0.92$~bits regardless of $M$.
 
-\textbf{The biologically relevant regime is intermediate.}  \citet{cheong2011} measured this directly: a population of ${\sim}14$ cells collectively achieves ${\sim}1.8$~bits---not $14 \times 0.92 = 12.9$~bits.  Capacity scales sublinearly, approximately as $C(M) \approx C_1 \cdot \log_2(M)$ where $C_1 \approx 0.23$~bits.  Extrapolating logarithmically: ${\sim}100$ cells yield ${\sim}1.5$~bits; ${\sim}1{,}000$ cells yield ${\sim}2.3$~bits; ${\sim}10^6$ cells yield ${\sim}4.6$~bits.
+\textbf{The biologically relevant regime is intermediate.}  \citet{cheong2011} measured this directly: a population of ${\sim}14$ cells collectively achieves ${\sim}1.8$~bits---not $14 \times 0.92 = 12.9$~bits.  Capacity scales sublinearly.  Fitting both endpoints ($C(1) = 0.92$, $C(14) = 1.8$) yields $C(M) \approx 0.92 + 0.23 \cdot \log_2(M)$, where the baseline single-cell capacity is preserved and the $0.23$~bit/doubling term captures the additional information from parallel observations.  Extrapolating: ${\sim}100$ cells yield ${\sim}2.5$~bits; ${\sim}1{,}000$ cells yield ${\sim}3.2$~bits; ${\sim}10^6$ cells yield ${\sim}5.5$~bits.
 
 \begin{table}[t]
 \centering
@@ -408,20 +408,20 @@ The answer depends on the correlation structure among immune cells.  Information
 \toprule
 System & $H$ & $C_{\text{agg}}$ ($10^6$) & $H\!>\!C$? \\
 \midrule
-\textit{P.~f.} (global) & 6.79 & ${\sim}4.6$ & Yes \\
-\textit{P.~f.} (per-genome) & 4.49 & ${\sim}4.6$ & Marginal \\
-\textit{T.~b.} (mean) & 1.70 & ${\sim}4.6$ & No \\
-\textit{T.~b.} (max) & 3.99 & ${\sim}4.6$ & No \\
-HIV-1 (per-position) & 2.98 & ${\sim}4.6$ & No \\
-HIV-1 (9-mer epitope) & 13.94 & ${\sim}4.6$ & Yes \\
+\textit{P.~f.} (global) & 6.79 & ${\sim}5.5$ & Yes \\
+\textit{P.~f.} (per-genome) & 4.49 & ${\sim}5.5$ & No \\
+\textit{T.~b.} (mean) & 1.70 & ${\sim}5.5$ & No \\
+\textit{T.~b.} (max) & 3.99 & ${\sim}5.5$ & No \\
+HIV-1 (per-position) & 2.98 & ${\sim}5.5$ & No \\
+HIV-1 (9-mer epitope) & 13.94 & ${\sim}5.5$ & Yes \\
 \bottomrule
 \end{tabular}
 \smallskip
 
-\footnotesize{$H$ and $C_{\text{agg}}$ in bits. Scaling: $C(M) \approx 0.23 \cdot \log_2(M)$.}
+\footnotesize{$H$ and $C_{\text{agg}}$ in bits. Scaling: $C(M) \approx 0.92 + 0.23 \cdot \log_2(M)$.}
 \end{table}
 
-Under logarithmic scaling with $10^6$ coordinated cells, \textit{T.~brucei} mean VSG entropy and HIV per-position entropy fall \emph{below} the aggregate capacity.  The finding that $H > C$ at the per-interaction, single-pathway level is robust.  Whether it holds at the system level depends on the correlation structure among cells---which has been measured only for small populations (14 cells) and extrapolated here.
+Under this scaling with $10^6$ coordinated cells, only \textit{P.~falciparum} global entropy (6.79~bits) and HIV 9-mer epitope entropy (13.94~bits) exceed the aggregate capacity of ${\sim}5.5$~bits.  The remaining measures fall below it.  The finding that $H > C$ at the per-interaction, single-pathway level is robust.  Whether it holds at the system level depends on the correlation structure among cells---which has been measured only for small populations (14 cells) and extrapolated here.
 
 \begin{figure}[t]
 \centering
@@ -432,9 +432,9 @@ Under logarithmic scaling with $10^6$ coordinated cells, \textit{T.~brucei} mean
 
 Three considerations mitigate this concern.  First, the logarithmic extrapolation may itself be optimistic: not all $10^6$ cells encounter the same antigen simultaneously, and spatial and temporal delays reduce effective coordination.  Second, the HIV 9-mer entropy (13.94~bits) exceeds even aggressive aggregate estimates.  Applying Fano's inequality:
 \begin{equation}
-P_e \geq 1 - \frac{4.6 + 1}{13.94} \approx 0.60
+P_e \geq 1 - \frac{5.5 + 1}{13.94} \approx 0.53
 \end{equation}
-Even with $10^6$ coordinated cells, the minimum error probability for discriminating HIV 9-mer epitopes exceeds 60\%.  Against the single-pathway benchmark:
+Even with $10^6$ coordinated cells, the minimum error probability for discriminating HIV 9-mer epitopes exceeds 53\%.  Against the single-pathway benchmark:
 \begin{equation}
 P_e \geq 1 - \frac{0.92 + 1}{13.94} \approx 0.86
 \end{equation}
