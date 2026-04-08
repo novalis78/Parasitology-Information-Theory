@@ -131,7 +131,7 @@ def sensitivity_pfalciparum():
     results.append({
         'system': 'P. falciparum', 'level': 'Global (full architecture)',
         'H_bits': H, 'CI_lo': ci_lo, 'CI_hi': ci_hi,
-        'H_corrected': H - mm, 'n_types': len(arch_counts),
+        'H_corrected': H + mm, 'n_types': len(arch_counts),
         'n_observations': sum(arch_counts.values()),
         'data_source': 'Otto et al. 2019 (varDB, N=2,398 isolates)'
     })

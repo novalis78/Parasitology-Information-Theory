@@ -215,7 +215,7 @@ def main():
     print(f"Efficiency H/H_max = {efficiency_global:.3f} ({100*efficiency_global:.1f}%)")
     print(f"Bootstrap 95% CI: [{boot_lo:.2f}, {boot_hi:.2f}] bits")
     print(f"Miller-Madow correction: {mm_correction:.4f} bits")
-    print(f"H(corrected) = {H_global - mm_correction:.2f} bits")
+    print(f"H(corrected) = {H_global + mm_correction:.2f} bits  (plugin underestimates; MM adds)")
 
     # ----------------------------------------------------------
     # Step 3: Per-country entropy
@@ -244,7 +244,7 @@ def main():
             'n_genes': n_genes,
             'n_unique_types': n_unique,
             'H_bits': round(H, 3),
-            'H_corrected': round(H - mm, 3),
+            'H_corrected': round(H + mm, 3),
             'H_max_bits': round(H_max, 3),
             'efficiency': round(eff, 4),
             'bootstrap_mean': round(boot_mean, 3),
